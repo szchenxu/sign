@@ -28,4 +28,4 @@ jobs:
         TG_API_HASH: ${{ secrets.TG_API_HASH }}
         TG_PHONE_NUMBER: ${{ secrets.TG_PHONE_NUMBER }}
       run: |
-        python telethon_script.py
+        python tgsign.py
