@@ -3,7 +3,7 @@ name: Telethon Scheduled Task
  
 on:
   schedule:
-    - cron: '0 0 * * *' # 每天中午12点执行
+    - cron: '0 0 * * *' # 每天中午0点执行
  
 jobs:
   run-telethon:
