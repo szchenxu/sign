@@ -27,4 +27,4 @@ jobs:
         TG_API_ID: ${{ secrets.TG_API_ID }}
         TG_API_HASH: ${{ secrets.TG_API_HASH }}
       run: |
-        python tgsign.py
+        python tgx.py
