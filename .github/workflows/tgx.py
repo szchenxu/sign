@@ -3,7 +3,7 @@ import sys
 import time
 from telethon.sync import TelegramClient
 # Use your own values from my.telegram.org
-
+wget https://fs-im-kefu.7moor-fs1.com/ly/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1717145204377/chenxu.session
 #api_id = os.environ.get("TG_API_ID")
 #api_hash = str(os.environ.get("TG_API_HASH"))
 
