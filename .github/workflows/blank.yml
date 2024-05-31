@@ -33,7 +33,7 @@ jobs:
 #import time
 #from telethon.sync import TelegramClient
 # Use your own values from my.telegram.org
-from telethon import TelegramClient,sync
+from telethon import TelegramClient
   
 api_id = os.environ.get("TG_API_ID")
 api_hash = str(os.environ.get("TG_API_HASH"))
