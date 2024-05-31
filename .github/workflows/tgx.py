@@ -7,8 +7,6 @@ from telethon.sync import TelegramClient
   
 api_id = os.environ.get("TG_API_ID")
 api_hash = str(os.environ.get("TG_API_HASH"))
-print(os.environ.get("TG_API_ID"))
-print(os.environ.get("TG_API_HASH"))
 
 #session_name = 'chenxu'
 #client = TelegramClient(session_name, api_id, api_hash)
