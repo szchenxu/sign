@@ -4,8 +4,8 @@ import time
 from telethon.sync import TelegramClient
 
 # Use your own values from my.telegram.org
-TG_API_ID = “TG_API_ID”
-TG_API_HASH = “TG_API_HASH”
+TG_API_ID = 'TG_API_ID'
+TG_API_HASH = 'TG_API_HASH'
 
 api_id = os.environ.get(TG_API_ID)
 api_hash = os.environ.get(TG_API_HASH)
