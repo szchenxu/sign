@@ -29,7 +29,7 @@ jobs:
       run: |
         #python .github/workflows/tgx.py
         import os
-import sys
+#import sys
 import time
 from telethon.sync import TelegramClient
 # Use your own values from my.telegram.org
