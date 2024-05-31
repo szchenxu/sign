@@ -27,6 +27,6 @@ jobs:
       env:
         TG_API_ID: ${{ secrets.TG_API_ID }}
         TG_API_HASH: ${{ secrets.TG_API_HASH }}
-        your-file-path: .github/workflows/chenxu.session
+        your-file-path: .github/workflows
       run: |
         python .github/workflows/tgx.py
