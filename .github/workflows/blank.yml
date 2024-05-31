@@ -3,7 +3,8 @@ name: TGSGK自动签到
 on: push
   #schedule:
    # - cron: '0 0 * * *' # 每天中午12点执行
- 
+     branches:
+      - '.github/workflows'
 jobs:
   run-telethon:
     runs-on: ubuntu-latest
