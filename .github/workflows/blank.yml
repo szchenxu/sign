@@ -1,10 +1,11 @@
 name: TGSGK自动签到
  
 on: push
-  #schedule:
-   # - cron: '0 0 * * *' # 每天中午12点执行
     paths:
       - '.github/workflows/**'  # 匹配files目录下的任何文件
+        #schedule:
+   # - cron: '0 0 * * *' # 每天中午12点执行
+      
 jobs:
   run-telethon:
     runs-on: ubuntu-latest
