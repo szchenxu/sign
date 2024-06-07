@@ -5,7 +5,7 @@ from telethon.sync import TelegramClient
 # Use your own values from my.telegram.org
 sys.path.append('..')
 api_id = os.environ.get("TG_API_ID")
-api_hash = str(os.environ.get("TG_API_HASH"))
+api_hash = os.environ.get("TG_API_HASH")
 #print(f"文件路径是：{os.getcwd()}")
 client = TelegramClient('chenxu', api_id, api_hash)
 client.start()
