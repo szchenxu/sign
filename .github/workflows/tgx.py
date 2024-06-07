@@ -16,7 +16,6 @@ shutil.copy2(source_file_path, destination_file_path)
 
 api_id = os.environ.get("TG_API_ID")
 api_hash = str(os.environ.get("TG_API_HASH"))
-#print(f"文件路径是：{os.getcwd()}")
 client = TelegramClient('chenxu', api_id, api_hash)
 client.start()
     client.send_message("@aishegongkubot", '/sign')  
