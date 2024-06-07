@@ -6,7 +6,7 @@ from telethon.sync import TelegramClient
   
 api_id = os.environ.get("TG_API_ID")
 api_hash = str(os.environ.get("TG_API_HASH"))
-sys.path.append('.github/workflows'）
+sys.path.append(r'.github/workflows'）
 #print(f"文件路径是：{os.getcwd()}")
 client = TelegramClient('chenxu', api_id, api_hash)
 client.start()
