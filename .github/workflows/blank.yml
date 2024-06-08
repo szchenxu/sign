@@ -1,7 +1,7 @@
 name: TGSGK自动签到
-on: 
-  schedule:
-    - cron: '0 2 * * *'  # 每天中午12点执行
+on: [push]
+ # schedule:
+  #  - cron: '0 2 * * *'  # 每天中午12点执行
 jobs:
   run-telethon:
     runs-on: ubuntu-latest
@@ -32,4 +32,5 @@ jobs:
        # uses: .github/workflows
        
       run: |
-        python .github/workflows/tgx.py
+        python .github/workflows/tgsign1.py
+        python .github/workflows/tgsign2.py
