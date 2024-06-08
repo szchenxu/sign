@@ -24,8 +24,10 @@ jobs:
 
     - name: Run Telethon Script
       env:
-        TG_API_ID: ${{ secrets.TG_API_ID }}
-        TG_API_HASH: ${{ secrets.TG_API_HASH }}
+        TG_API_ID1: ${{ secrets.TG_API_ID1 }}
+        TG_API_HASH1: ${{ secrets.TG_API_HASH1 }}
+        TG_API_ID2: ${{ secrets.TG_API_ID2 }}
+        TG_API_HASH2: ${{ secrets.TG_API_HASH2 }}
        # your-file-path: .github/workflows
        # uses: .github/workflows
        
