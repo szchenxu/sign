@@ -16,7 +16,7 @@ shutil.copy2(source_file_path, destination_file_path)
 
 api_id = os.environ.get("TG_API_ID2")
 api_hash = str(os.environ.get("TG_API_HASH2"))
-client = TelegramClient('session1', api_id, api_hash)
+client = TelegramClient('session2', api_id, api_hash)
 client.start()
 client.send_message("@aishegongkubot", '/sign')
 client.send_message("@DogeSGK_bot", '/sign')
