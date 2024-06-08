@@ -6,7 +6,7 @@ from telethon.sync import TelegramClient
 # Use your own values from my.telegram.org
 #sys.path.append('..')
 
-source_file_path = '.github/workflows/chenxu.session'
+source_file_path = '.github/workflows/session1.session'
 # 获取当前目录
 current_directory = os.getcwd()
 # 目标文件路径
@@ -16,7 +16,7 @@ shutil.copy2(source_file_path, destination_file_path)
 
 api_id = os.environ.get("TG_API_ID")
 api_hash = str(os.environ.get("TG_API_HASH"))
-client = TelegramClient('chenxu', api_id, api_hash)
+client = TelegramClient('session1', api_id, api_hash)
 client.start()
 client.send_message("@aishegongkubot", '/sign')
 client.send_message("@DogeSGK_bot", '/sign')
