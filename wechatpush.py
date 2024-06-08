@@ -1,3 +1,4 @@
+import os
 import requests
 
 def send_wechat(msg):
