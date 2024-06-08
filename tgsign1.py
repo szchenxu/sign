@@ -6,7 +6,7 @@ from telethon.sync import TelegramClient
 # Use your own values from my.telegram.org
 
 #session文件目录
-source_file_path = '.github/workflows/session1.session'
+source_file_path = '.github/session1.session'
 # 获取当前目录
 current_directory = os.getcwd()
 # 目标文件路径
