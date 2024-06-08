@@ -28,8 +28,7 @@ jobs:
         TG_API_HASH1: ${{ secrets.TG_API_HASH1 }}
         TG_API_ID2: ${{ secrets.TG_API_ID2 }}
         TG_API_HASH2: ${{ secrets.TG_API_HASH2 }}
-
-       
+        #配置环境变量...
       run: |
         python .github/workflows/tgsign1.py
         python .github/workflows/tgsign2.py
