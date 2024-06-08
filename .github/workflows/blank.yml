@@ -1,6 +1,5 @@
 name: TGSGK自动签到
-on:
-pushs
+on: [push]
   #schedule:
   #  - cron: '30 2 * * *'  # 每天中午12点执行
 jobs:
