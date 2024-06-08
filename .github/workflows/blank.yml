@@ -1,7 +1,7 @@
 name: TGSGK自动签到
-on: [push]
- # schedule:
-  #  - cron: '0 2 * * *'  # 每天中午12点执行
+on: 
+  schedule:
+    - cron: '0 2 * * *'  # 每天2点执行（github时间）
 jobs:
   run-telethon:
     runs-on: ubuntu-latest
@@ -13,7 +13,7 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.11.1'
-
+        #配置python环境...
  
     - name: Install Dependencies
       run: |
@@ -28,8 +28,7 @@ jobs:
         TG_API_HASH1: ${{ secrets.TG_API_HASH1 }}
         TG_API_ID2: ${{ secrets.TG_API_ID2 }}
         TG_API_HASH2: ${{ secrets.TG_API_HASH2 }}
-       # your-file-path: .github/workflows
-       # uses: .github/workflows
+
        
       run: |
         python .github/workflows/tgsign1.py
