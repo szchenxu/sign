@@ -23,8 +23,8 @@ for file in files_to_copy:
 
 # API 列表
 api_list = [
-    {"name": "盯档猫", "api_id": os.environ.get("TG_API_ID1"), "api_hash": str(os.environ.get("TG_API_HASH1"))},
-    {"name": "老八", "api_id": os.environ.get("TG_API_ID2"), "api_hash": str(os.environ.get("TG_API_HASH2"))},
+    {"name": "盯档猫", "api_id": 23495504, "api_hash": str(os.environ.get("TG_API_HASH1"))},
+    {"name": "老八", "api_id": 23760028, "api_hash": str(os.environ.get("TG_API_HASH2"))},
 
 ]
 
