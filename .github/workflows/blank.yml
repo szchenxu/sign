@@ -34,5 +34,5 @@ jobs:
       run: |
         #python tgsign1.py
         #python tgsign2.py
-        #python sign.py
-        python wechatpush.py
+        python sign.py
+        #python wechatpush.py
