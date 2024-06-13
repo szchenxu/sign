@@ -1,7 +1,7 @@
 name: TGSGK自动签到
-on: 
- schedule:
-    - cron: '0 2 * * *'  # 每天2点执行（github时间）
+on: [push]
+# schedule:
+#    - cron: '0 2 * * *'  # 每天2点执行（github时间）
 jobs:
   run-telethon:
     runs-on: ubuntu-latest
@@ -24,14 +24,15 @@ jobs:
 
     - name: Run Telethon Script
       env:
-        TG_API_ID1: ${{ secrets.TG_API_ID1 }}
+        #TG_API_ID1: ${{ secrets.TG_API_ID1 }}
         TG_API_HASH1: ${{ secrets.TG_API_HASH1 }}
-        TG_API_ID2: ${{ secrets.TG_API_ID2 }}
+      #  TG_API_ID2: ${{ secrets.TG_API_ID2 }}
         TG_API_HASH2: ${{ secrets.TG_API_HASH2 }}
         WECHATPUSH_TOKEN: ${{ secrets.WECHATPUSH_TOKEN }}
         
         #配置环境变量...
       run: |
-        python tgsign1.py
-        python tgsign2.py
+        #python tgsign1.py
+        #python tgsign2.py
+        #python sign.py
         python wechatpush.py
