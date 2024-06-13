@@ -41,14 +41,14 @@ def send_messages(api_id, api_hash):
     client.start()
 
     # 发送消息
-    #client.send_message("@aishegongkubot", '/sign')  # AISGK
-    #client.send_message("@DogeSGK_bot", '/sign')    # 狗狗社工库
-    client.send_message("@yuehanbot", '/sign')      # 约翰社工库
-    #client.send_message("@sgkvipbot", '/sign')      # 花花社工库
-    #client.send_message("@InfSGK_bot", '/sign')     # 情报局社工库
-    #client.send_message("@DingDangCats_Bot", '/qd')  # 叮当社工库
-    #client.send_message("@pingansgk_bot", '/qd')    # 平安社工库
-
+    client.send_message("@aishegongkubot", '/sign')  # AISGK
+    client.send_message("@DogeSGK_bot", '/sign')    # 狗狗SGK
+    client.send_message("@yuehanbot", '/sign')      # 约翰SGK
+    client.send_message("@sgkvipbot", '/sign')      # 花花SGK
+    client.send_message("@InfSGK_bot", '/sign')     # 情报局SGK
+    client.send_message("@DingDangCats_Bot", '/qd')  # 叮当SGK
+    client.send_message("@pingansgk_bot", '/qd')    # 平安SGK
+    client.send_message("@qingfeng888bot", '/qd')   # 清风轰炸机器人
     # 断开客户端连接
     client.disconnect()
 
