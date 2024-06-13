@@ -1,7 +1,11 @@
 name: TGSGK自动签到
+
 on: 
  schedule:
     - cron: '0 2 * * *'  # 每天2点执行（github时间）
+
+on: [push]    #此项开启时为文件有更新立即执行，与上面3行代码有冲突
+    
 jobs:
   run-telethon:
     runs-on: ubuntu-latest
