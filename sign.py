@@ -17,7 +17,7 @@ files_to_copy = [f for f in os.listdir(source_dir) if f.endswith(suffix)]
 # 复制文件到当前目录
 for file in files_to_copy:
     source_path = os.path.join(source_dir, file)
-	current_directory = os.getcwd()
+    current_directory = os.getcwd()
     destination_path = os.path.join(current_directory, file)
     shutil.copy2(source_path, destination_path)
 
