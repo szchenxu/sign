@@ -3,7 +3,6 @@ import sys
 import time
 import shutil
 from telethon.sync import TelegramClient
-# Use your own values from my.telegram.org
 
 
 source_file_path = 'sessions/session2.session'
