@@ -48,7 +48,7 @@ def send_messages(api_id, api_hash):
     client.send_message("@DingDangCats_Bot", '/qd')
     client.send_message("@pingansgk_bot", '/qd')   
     client.send_message("@qingfeng888bot", '/qd')  
- client.send_message("@Zonesgk_bot", '/qd')  
+client.send_message("@Zonesgk_bot", '/qd')  
  
     # 断开客户端连接
     client.disconnect()
