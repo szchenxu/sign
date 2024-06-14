@@ -4,7 +4,7 @@ import time
 import shutil
 import time
 from telethon.sync import TelegramClient
-from telethon.tl.functions.messages import SendMessageRequest
+
 
 #拷贝所有session文件到当前目录
 
