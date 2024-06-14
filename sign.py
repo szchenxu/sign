@@ -4,7 +4,6 @@ import time
 import shutil
 import time
 from telethon.sync import TelegramClient, errors
-from telethon.tl.types import InputPeerUser, InputPeerChannel
 
 #拷贝所有session文件到当前目录
 
@@ -29,17 +28,6 @@ api_list = [
 
 ]
 
-def send_message_if_exists(entity_id, message_text):
-    try:
-        # 尝试发送消息
-        client.send_message(entity_id, message_text)
-    except errors.BadRequestError as e:
-        # 如果对象不存在，会抛出 BadRequestError 异常
-        if 'PEER_ID_INVALID' in e.message:
-            print(f"The entity with ID {entity_id} does not exist. Message skipped.")
-        else:
-            raise  # 重新抛出其他类型的错误
-
 
 # 发送消息函数
 def send_messages(api_id, api_hash):
@@ -63,8 +51,24 @@ def send_messages(api_id, api_hash):
     #client.send_message("@qingfeng888bot", '/qd')  
     #client.send_message("@Zonesgk_bot", '/qd')  
     # 断开客户端连接
-    send_message_if_exists(InputPeerUser("@InfSGK_bot"), '/sign')
-    send_message_if_exists(InputPeerUser("@yuehanbot"), '/sign')
+     try:
+        # 尝试发送消息
+        client.send_message("@InfSGK_bot", '/sign')
+    except errors.BadRequestError as e:
+        # 如果对象不存在，会抛出 BadRequestError 异常
+        if 'PEER_ID_INVALID' in e.message:
+            print(f"The entity with ID {entity_id} does not exist. Message skipped.")
+        else:
+            raise  # 重新抛出其他类型的错误
+         try:
+        # 尝试发送消息
+        client.send_message("@yuehanbot", '/sign')
+    except errors.BadRequestError as e:
+        # 如果对象不存在，会抛出 BadRequestError 异常
+        if 'PEER_ID_INVALID' in e.message:
+            print(f"The entity with ID {entity_id} does not exist. Message skipped.")
+        else:
+            raise  # 重新抛出其他类型的错误
  
     client.disconnect()
 
