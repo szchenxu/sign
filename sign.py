@@ -45,7 +45,6 @@ def send_messages(api_id, api_hash):
     client.send_message("@DogeSGK_bot", '/sign')
     client.send_message("@yuehanbot", '/sign')     
     client.send_message("@sgkvipbot", '/sign')    
-    client.send_message("@InfSGK_bot", '/sign')    
     client.send_message("@DingDangCats_Bot", '/qd')
     client.send_message("@pingansgk_bot", '/qd')   
     client.send_message("@qingfeng888bot", '/qd')  
