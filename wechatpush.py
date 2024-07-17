@@ -6,9 +6,10 @@ def send_wechat(msg):
     title = 'github'
     content = msg
     template = 'html'
-    url = f"https://www.pushplus.plus/send?token={token}&title={title}&content={content}&template={template}"
+    #url = f"https://www.pushplus.plus/send?token={token}&title={title}&content={content}&template={template}"
+    url = 'http://www.pushplus.plus/send?token='+token+'&title='+title+'&content='+content
   #  print(url)
-    r = requests.get(url=url)
+    requests.get(url)
   #  print(r.text)
 
 if __name__ == '__main__':
