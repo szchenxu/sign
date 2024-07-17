@@ -2,7 +2,7 @@ import os
 import requests
 
 #def send_wechat(msg):
-    token = os.environ.get("WECHATPUSH_TOKEN")
+    token = str(os.environ.get("WECHATPUSH_TOKEN"))
     title = 'github'
     content = '脚本已正常执行'
     template = 'html'
