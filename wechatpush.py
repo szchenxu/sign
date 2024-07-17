@@ -1,17 +1,15 @@
 import os
 import requests
-
-#def send_wechat(msg):
-    token = '6111677c571f46edb68349777008c905'
-    title = 'github'
-    content = '脚本已正常执行'
-    template = 'html'
-    url = f"https://www.pushplus.plus/send?token={token}&title={title}&content={content}&template={template}"
-    #url = 'http://www.pushplus.plus/send?token='+token+'&title='+title+'&content='+content
-  #  print(url)
-    r = requests.get(url=url)
-  #  print(r.text)
-
-if __name__ == '__main__':
-    msg = '脚本已正常执行'
-    send_wechat(msg)
+import json
+token = '你的token' #在pushpush网站中可以找到
+title= 'github' #改成你要的标题内容
+content ='脚本已正常执行' #改成你要的正文内容
+url = 'http://www.pushplus.plus/send'
+data = {
+    "token":token,
+    "title":title,
+    "content":content
+}
+body=json.dumps(data).encode(encoding='utf-8')
+headers = {'Content-Type':'application/json'}
+requests.post(url,data=body,headers=headers)
