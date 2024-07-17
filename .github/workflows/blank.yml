@@ -1,11 +1,11 @@
 name: TGSGK自动签到
 
-#on: [push]    
+on: [push]    
 #此项开启时为文件有更新立即执行Actions，与下面3行代码有冲突
 
-on: 
- schedule:
-    - cron: '0 2 * * *'  # 每天2点执行（github时间）
+#on: 
+ #schedule:
+    #- cron: '0 2 * * *'  # 每天2点执行（github时间）
 
 
     
@@ -37,5 +37,5 @@ jobs:
         
         #配置环境变量...
       run: |
-        python sign.py
-        #python wechatpush.py
+        #python sign.py
+        python wechatpush.py
