@@ -1,7 +1,7 @@
 name: TGSGK自动签到
 
 #on: [push]    
-#此项开启时为文件有更新立即执行Actions，与下面3行代码有冲突
+#此项开启时为文件有更新立即执行Actions，与下面3行代码有冲突2024.11.11
 
 on: 
  schedule:
