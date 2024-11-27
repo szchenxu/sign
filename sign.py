@@ -43,7 +43,6 @@ def send_messages(api_id, api_hash):
 
     # 发送消息
     client.send_message("@aishegongkubot", '/sign')
-    client.send_message("@DogeSGK_bot", '/sign')
     client.send_message("@yuehanbot", '/sign')     
     client.send_message("@sgkvipbot", '/sign')    
     client.send_message("@DingDangCats_Bot", '/qd')
