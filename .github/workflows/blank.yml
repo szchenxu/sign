@@ -5,7 +5,7 @@ name: TGSGK自动签到
 
 on: 
  schedule:
-    - cron: '0 2 * * *'  # 每天2点执行（github时间）
+    - cron: '0 2 * * *'  # 每天2点执行（github时间）1
 
 
     
