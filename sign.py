@@ -46,6 +46,8 @@ def send_messages(api_id, api_hash):
     client.send_message("@sgkvipbot", '/sign')    
     client.send_message("@DingDangCats_Bot", '/qd')
     client.send_message("@Zonesgk_bot", '/qd')  
+    client.send_message("@TaoBaoSGKBot", '/sign')
+    client.send_message("@KHQBB_bot", '签到')
     # 断开客户端连接
     client.disconnect()
 
