@@ -3,9 +3,9 @@ name: TGSGK自动签到
 #on: [push]    
 #此项开启时为文件有更新立即执行Actions，与下面3行代码有冲突2025.3.221
 
-on: 
- schedule:
-    - cron: '0 2 * * *'  # 每天2点执行（github时间）1
+#on: 
+# schedule:
+   # - cron: '0 2 * * *'  # 每天2点执行（github时间）1
 
 
     
